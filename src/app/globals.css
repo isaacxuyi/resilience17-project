@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-container {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+ display: flex;
+ align-items: center;
+}
+
+
+
+#hamburgerMenu {
+  margin-right: 28px;
+}
+
+#oth2 {
+margin-right: 28px;
+}
+
+.hero {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 200;
+  width: 500px;
+}
+
+.dashboard-txt {
+  background-color: hsl(195, 36%, 34%, 16%);
+}
+
+
+.sidebar-item {
+  border-radius: 18px;
+  padding: 7px;
+  font-size: 16px;
+}
+
+.dashboard-txt {
+  color: #3A6C7B;
+}
+
+.hero-main {
+  width: 1200px;
+}
+
+
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.dropdownicon {
+  font-size: small;
+}
+
+.entire {
+  display: flex;
+  gap: 2rem;
+  margin-top: 14px;
+}
+
+#statusBox {
+  margin-left: 10px;
+}
+
+#sharebtn {
+  margin-right: 10px;
+}
+
+.avatar-group {
+  display: flex;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white; /* Optional: for a clean border around each image */
+  object-fit: cover;
+  margin-left: -10px; /* This creates the overlap */
+}
+
+/* Optional: so the first avatar doesn't get cut */
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avartar-header-section {
+  display: flex;
+}
+
+.avartar-names {
+  margin-left: 9px;
+}
+.oth-avarter {
+  margin-left: 3px;
+}
+
+.overview-transaction {
+  display: flex;
+  gap: 1rem;
+  border-bottom: solid;
+  border-bottom-color: #49656E;
+  border-width: 1px;
+  margin-top: 1.6rem;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.overview-transaction div {
+  color: #37484d;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.summary-title {
+  padding-top: 65px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.summary-card {
+  background-color: #f3f4f6; /* light gray */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.change {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.change.positive {
+  color: #0a915b; /* green */
+}
+
+.change.negative {
+  color: #d11a2a; /* red */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-sum-data {
+  color: hsl(195, 36%, 13%, 62%) !important;
+  font-weight: 500 !important;
+
+}
+
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.badge.credit {
+  background-color: rgba(34, 197, 94, 0.1); /* light green */
+  color: #22c55e;
+}
+
+.badge.debit {
+  background-color: rgba(239, 68, 68, 0.1); /* light red */
+  color: #ef4444;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 80%;
+  background-color: currentColor;
+}
